@@ -1,0 +1,5 @@
+MySQL
+
+Export: Server > Data Export > Select Dump Type > Export to Self-Contained File > Include Create Schema > Start Export
+
+Import: Server > Data Import > Import from Self-Contained File > Start Import
