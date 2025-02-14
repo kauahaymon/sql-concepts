@@ -5,5 +5,5 @@ create table gafanhoto_assiste_curso (
     idcurso int,
     primary key (id),
     foreign key (idgafanhoto) references gafanhotos (id),
-    foreign key (idcuros) references cursos (idcurso)
+    foreign key (idcurso) references cursos (idcurso)
 ) default charset = utf8;
