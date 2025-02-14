@@ -18,3 +18,10 @@ on g.id = c.idcurso;
 select g.nome, c.nome, c.ano
 from gafanhotos as g right join cursos as c
 on c.idcurso = g.id;
+
+# jutando VARIAS tabelas (many to many)
+select g.nome, a.idcurso, c.nome from gafanhotos g
+join gafanhoto_assiste_curso a 
+on g.id = a.id
+join cursos c
+on a.id = c.idcurso;
